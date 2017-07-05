@@ -42,6 +42,10 @@
     			</div>
     			<div class="clear"></div>
     			<div class="footer">
+				<div class="form-group text-center hidden">
+					<input type="text" class="form-control" id="link">
+					<button type="button" id="create_link" class="btn btn-primary">Create Link</button>
+				</div>
     				<p class="a">
     					<a href="http://facebook.com/doquyettien" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
     					<a href="http://twitter.com/tiendq_it" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
@@ -56,5 +60,14 @@
         <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
         <!-- Bootstrap -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#create_link').on('click', function() {
+				if ($('#link').val() != '') {
+					window.open('https://pub.accesstrade.vn/deep_link/4469148320228317227?url=' + encodeURIComponent($('#link').val()), '_blank');
+				}
+			});
+		});
+	</script>
     </body>
 </html>
