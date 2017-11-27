@@ -21,53 +21,33 @@
     </head>
     <body>
     	<div class="content">
-    		<div class="wrap">
-    			<div class="content-grid">
-    				<p>
-    					<img src="images/top.png" alt="top">
-    				</p>
-    			</div>
-    			<div class="grid clearfix mr50 ml50">
-					<div class="rows">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center mt10">
-							<a href="http://company.doquyettien.com" target="_blank" role="button" class="btn btn-primary btn-lg w200px">Company CMS</a>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center mt10">
-							<a href="http://e-commerce.doquyettien.com" target="_blank" role="button" class="btn btn-primary btn-lg w200px">E-Commerce CMS</a>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center mt10">
-							<a href="http://besudo.net" target="_blank" role="button" class="btn btn-primary btn-lg w200px">Sudo</a>
-						</div>
-					</div>
-    			</div>
-    			<div class="clear"></div>
-    			<div class="footer">
-				<div class="form-group text-center hidden">
-					<input type="text" class="form-control" id="link">
-					<button type="button" id="create_link" class="btn btn-primary">Create Link</button>
+			<div class="wrap">
+				<div class="content-grid">
+					<p>
+						<img src="images/top.png" alt="top">
+					</p>
 				</div>
-    				<p class="a">
-    					<a href="http://facebook.com/doquyettien" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
-    					<a href="http://twitter.com/tiendq_it" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
-    				</p>
-    				<p>Copyright 2016 - doquyettien@gmail.com</p>
-    			</div>
-    			<div class="clear"></div>
-    		</div>
+				<div class="grid">
+					<p>
+						<img src="images/coming.png" alt="coming">
+					</p>
+					<h3>We are Still Working on it.</h3>
+				</div>
+				<div class="clear"></div>
+				<div class="footer">
+					<p class="a">
+						<a href="http://facebook.com/doquyettien" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+						<a href="http://twitter.com/tiendq_it" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+					</p>
+					<p>Copyright 2016 - <a href="mailto:doquyettien@gmail.com">doquyettien@gmail.com</a></p>
+				</div>
+				<div class="clear"></div>
+			</div>
     	</div>
     	<div class="clear"></div>
     	<!-- jQuery -->
         <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
         <!-- Bootstrap -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#create_link').on('click', function() {
-				if ($('#link').val() != '') {
-					window.open('https://pub.accesstrade.vn/deep_link/4469148320228317227?url=' + encodeURIComponent($('#link').val()), '_blank');
-				}
-			});
-		});
-	</script>
     </body>
 </html>
